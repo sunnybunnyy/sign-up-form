@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'mountains_of_christmasregular';
+    src: url('fonts/mountainsofchristmas-regular-webfont.woff2') format('woff2'),
+         url('fonts/mountainsofchristmas-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
