@@ -4,48 +4,51 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Document</title>
+        <title>Sign-up Form</title>
     </head>
     <body>
         <div class="img">
-            <img src="./luann-hunt-O3TlS547j7k-unsplash.jpg" alt="Peaches in a box">
             <div class="logo-background">
-                <img src="./logo.png" alt="Odin logo">
+                <img class="logo" src="./logo.png" alt="Peaches logo">
                 <h1>PEACHES</h1>
             </div>
-            <div class="credit">
-                <p>Photo by <a href="https://unsplash.com/@luannhunt180?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">LuAnn Hunt</a> on <a href="https://unsplash.com/photos/crate-of-reed-fruit-O3TlS547j7k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
-            </div>
+            <p class="credit">Photo by <a href="https://unsplash.com/@luannhunt180?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">LuAnn Hunt</a> on <a href="https://unsplash.com/photos/crate-of-reed-fruit-O3TlS547j7k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
         </div>
         <div class="form">
-            <p>Sign up today to get access to the freshest, juiciest peaches straight from the orchard to your doorstep! Enjoy exclusive offers, seasonal updates, and delicious peach-inspired recipes delivered to your inbox. Don’t miss out on the sweetest experience—register now and make every season peach-perfect!</p>
+            <p class="cta">Sign up today to get access to the freshest, juiciest peaches straight from the orchard to your doorstep! Enjoy exclusive offers, seasonal updates, and delicious peach-inspired recipes delivered to your inbox. Don’t miss out on the sweetest experience—register now and make every season peach-perfect!</p>
             <div class="enter-data">
                 <h2>Join the Peach Lovers Community! 🍑</h2>
                 <form action="" method="post">
-                    <p>
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="first-name"/>
-                    </p>
-                    <p>
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name"/>
-                    </p>
-                    <p>
-                        <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email"/>
-                    </p>
-                    <p>
-                        <label for="phone-number">PHONE NUMBER</label>
-                        <input type="tel" id="phone-number" name="phone-number"/>
-                    </p>
-                    <p>
-                        <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password"/>
-                    </p>
-                    <p>
-                        <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm-password" name="confirm-password"/>
-                    </p>
+                    <div class="two-inputs">
+                        <p>
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name"/>
+                        </p>
+                        <p>
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name"/>
+                        </p>
+                    </div>
+                    <div class="two-inputs">
+                        <p>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email"/>
+                        </p>
+                        <p>
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="phone-number" name="phone-number"/>
+                        </p>
+                    </div>
+                    <div class="two-inputs">
+                        <p>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password"/>
+                        </p>
+                        <p>
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" name="confirm-password"/>
+                        </p>
+                    </div>
                 </form>
             </div>
             <p class="button">

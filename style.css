@@ -7,55 +7,149 @@
 
 }
 
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'mountains_of_christmasregular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-size: 100%;
+  background-image: url("./luann-hunt-O3TlS547j7k-unsplash.jpg");
+}
+
+.form {
+  flex: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
   
-  /*
-    2. Remove default margin
-  */
-  * {
-    margin: 0;
-  }
+  padding: 50px 0;
+  background-color: rgb(245, 245, 245);
+}
+
+.cta {
+  margin-bottom: 50px;
+  padding-left: 50px;
+}
+
+.enter-data {
+  display: flex;
+  flex-flow: column;
+  background-color: rgba(255,255,255);
+  padding: 20px 50px;
+  box-shadow: 5px 5px rgb(242, 242, 242);
+}
+
+.two-inputs {
+  display: flex;
+}
+
+p:has(> label) {
+  display: flex;
+  flex-direction: column;
   
-  /*
-    Typographic tweaks!
-    3. Add accessible line-height
-    4. Improve text rendering
-  */
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  /*
-    5. Improve media defaults
-  */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  
-  /*
-    6. Remove built-in form typography styles
-  */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  
-  /*
-    7. Avoid text overflows
-  */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  
-  /*
-    8. Create a root stacking context
-  */
-  #root, #__next {
-    isolation: isolate;
-  }
+}
+
+.two-inputs > :first-child {
+  margin-right: 50px;
+}
+
+.two-inputs > :last-child {
+  margin-left: 50px;
+}
+
+input {
+  margin-bottom: 10px;
+  width: 200px;
+  border: 1px solid;
+  border-radius: 3px;
+  border-color: #E5E7EB;
+  padding: 5px;
+}
+
+.background {
+  height: 100vh;
+}
+
+.logo-background {
+  display: flex;
+  position: relative;
+  background-color: rgba(0,0,0,0.5);
+  top: 190px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  margin: 10px;
+}
+
+.credit {
+  position: fixed;
+  bottom: 10px;
+  align-self: center;
+  color: white;
+  font-size: 14px;
+}
+
+a {
+  color: white;
+  text-decoration-thickness: 1px;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 10px;
+}
+
+button {
+  margin: 30px 50px;
+  padding: 10px 50px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(237, 130, 102);
+  box-shadow: 5px 5px rgb(242, 242, 242);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.existing-account {
+  padding: 0 50px;
+}
+
+span {
+  color: rgb(237, 130, 102);
+  cursor: pointer;
+}
+
+input:invalid {
+  border-color: red;
+  outline: none;
+}
+
+input:focus {
+  border-color: blue;
+  outline: none;
+  box-shadow: 3px 3px rgb(242, 242, 242);
+}
+
